@@ -1,0 +1,1242 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans';
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+h9,
+h10,
+h11,
+h12,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: calc(1256px + 40px);
+    padding: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    text-transform: uppercase;
+    /* font-style: italic; */
+    cursor: pointer;
+}
+
+.button-none {
+    background: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    margin-left: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.logo {
+    flex-shrink: 2;
+    color: #E3B873;
+}
+
+.header-mobile {
+    flex-shrink: 0;
+    color: #E3B873;
+}
+
+.header,
+.footer {
+    background-color: black;
+}
+
+.header-content,
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+
+.header-navigation {
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+.header-navigation__item:last-child {
+    margin-right: 0;
+}
+
+/*
+БЛОК ПРОЕКТОВ
+*/
+.projects {
+    background: #000;
+}
+
+.projects-slider {
+    display: flex;
+    gap: 50px;
+}
+
+.projects-slider__right img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.projects-slider__left {
+    width: 442px;
+    max-width: 45%;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+}
+
+.projects-nav__item {
+    margin-right: 60.5px;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.projects-nav__item a {
+    /* Rostov-on-Don Patriotic */
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+.header-navigation__item a:hover,
+.projects-nav__item a:hover,
+.style__left_link a:hover {
+    color: #E3B873;
+}
+
+.hero {
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    /* height: 707px; */
+    padding: 194px 0 208px;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .7)
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__main {
+    padding: 0 42px;
+}
+
+.tittle {
+    /* Turnkey Repair in the city of Rostov-on-Don */
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+
+.tittle-content {
+    /* City: */
+    margin: 0;
+    margin-top: 42px;
+    display: flex;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+
+}
+
+.apartament-tittle-text {
+    padding: 0px calc(324.45px - 74.03px);
+    /*padding: 0px 324.45px;*/
+}
+
+.cost-tittle-text {
+    padding: 0px calc(324.45px - 188.75px);
+    /* padding: 0px 324.45px;*/
+}
+
+.yellow {
+    /*Rostov-on-Don*/
+    color: #E3B873;
+}
+
+.text-content {
+    margin-bottom: 30px;
+    display: flex;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.projects-text-content {
+    /* Only a small part of the work performed by our company*/
+    display: flex;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.apartament-text-content {
+    padding: 0px calc(324.45px - 184.12px);
+    /*padding: 0px 324.45px;*/
+}
+
+.request-text-content {
+    padding: 0px calc(324.45px - 121.62px);
+    /*padding: 0px 324.45px;*/
+}
+
+.projects {
+    padding: 107px 0 240px;
+}
+
+.projects-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 42px;
+}
+
+.projects-nav {
+    margin-left: auto;
+    display: inline-block;
+    padding: 0 calc(42px + 56px);
+    margin-bottom: 45px;
+}
+
+.projects-nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.projects-nav__item:last-child {
+    margin-right: 0;
+}
+
+
+.projects-nav__link {
+    text-decoration: none;
+    position: relative;
+}
+
+.projects-nav__link.active,
+.style__left_link.active
+{
+    color: #E3B873;
+}
+
+.projects-nav__link.active::after,
+.style__left_link.active::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 1px;
+    background: #E3B873;
+}
+
+.projects-tittle {
+    /* Completed projects */
+
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 34px;
+
+}
+
+.projects-text-content {
+    margin-bottom: 42px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px 29px;
+}
+
+.projects-grid__card__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+.projects-grid__card__text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.projects-bottom__left {
+    margin-top: 80px;
+}
+
+
+.projects-bottom {
+    /* padding: 90.72px 623.45px; */
+    width: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    margin: 90px auto 0;
+}
+
+.control-tittle {
+    /* online control */
+    display: flex;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.bottom-pic-camera {
+    /* pic camera */
+    list-style: none;
+    display: flex;
+}
+
+
+/*
+БЛОК ввода данных
+*/
+
+.input {
+    /* background-color: white; */
+    position: relative;
+    top: -200px;
+}
+
+.input-list {
+    /* background-color: white; */
+    position: relative;
+}
+
+.repair {
+    position: relative;
+}
+
+.repair-image {
+    position: relative;
+    /* top: -200px; */
+    margin: 0 auto;
+    width: max-content;
+}
+
+.play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.line_55 {
+    /* line_55 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 62.5px auto 0;
+    margin-bottom: 34.46px;
+}
+
+.request-text {
+    /* At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast. */
+
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 91.5px;
+}
+
+.input-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    /* border-bottom: 1px solid grey; */
+    margin-bottom: 33.24px;
+    gap: 33px 50px;
+    /*padding: 336px 91.5;*/
+    flex-wrap: wrap;
+}
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.input_field input {
+    border: none;
+    padding: 7px 0px 8px;
+    outline: none;
+    border-bottom: 1px solid #3636364D;
+    width: 231px;
+    max-width: 100%;
+}
+
+.checkbox {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+
+.checkbox input {
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+    position: relative;
+    right: -28px;
+}
+
+.checkbox input + span {
+    /* background: #E3B873; */
+    border-radius: 1px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E3B873;
+}
+
+.checkbox input:checked+span {
+    background: #E3B873;
+}
+
+.input-bottom {
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 31px;
+    margin: 0 auto;
+}
+
+.input_button {
+    padding: 20px 75px;
+}
+
+.type-repair-title {
+    /* TYPES OF REPAIR */
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.bottom-pic-repair {
+    /* pic repair */
+    list-style: none;
+    display: flex;
+}
+
+/*
+БЛОК дизайна
+*/
+
+.redecorating-text__item p,  .overhaul-text__item p, .designer-text__item p{
+    display: inline-block;
+}
+
+.design {
+    background-color: white;
+    position: relative;
+    padding-bottom: 124px;
+}
+/*.container .design-card {
+    border: 3px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}*/
+
+.design-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.design-card__text_redecorating, .design-card__text_overhaul, .design-card__text_designer {
+    width: 330px;
+    height: 286px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    background: #FFF;
+    border: 1px solid #000;
+    margin-top: calc(294px - 421px);
+    display: flex;
+    flex-direction: column;
+}
+
+.redecorating-title, .overhaul-title, .designer-title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+
+.redecorating-title {
+    padding: 25px 68px 13px 34px;
+}
+
+.overhaul-title {
+    padding: 25px 88.3px 13px 31px;
+}
+
+.designer-title {
+    padding: 25px 88.3px 13px 31px;
+}
+.redecorating-text {
+    padding: 0 29px 54px 34px;
+}
+
+.overhaul-text {
+    padding: 0 32px 36px 31px;
+}
+
+.designer-text {
+    padding: 0 32px 49px 31px;
+}
+
+.design-card__button-redecorating, .design-card__button-overhaul, .design-card__button-designer  {
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    margin-top: auto;
+    margin-bottom: -28px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+/*.design-card__picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 33.33%;
+    margin-right: 30px;
+}
+
+ .design-card__text_overhaul, .design-card__text_designer {
+    width: 267px;
+    height: 178px;
+    background-color: white;
+    position: relative;
+    top: -100px;
+    margin-right: 92px;
+}*/
+
+.overhaul-title, .designer-title {
+    /* Redecorating */
+
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+/*.design-card__text {
+     • Dismantling of old coatings • Wallpapering • Painting walls and ceilings • Laying flooring • Replacing plumbing • Replacing sockets and switches • Replacing doors 
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 33.33%;
+    margin-right: 92px;
+}*/
+
+
+.redecorating-text, .overhaul-text, .designer-text {
+    padding: 25px, 54px, 34px, 29px;
+
+}
+.redecorating-text__list, .overhaul-text__list, .designer-text__list {
+   /* border: 3px solid white;*/
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.design-card__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.design-card__price_redecorating, .design-card__price_overhaul, .design-card__price_designer { 
+   /* from 900 rub / m2 */
+    width: 228px;
+    background-color: #E3B873;
+    color: white;
+    margin-right: 193px;   
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/*БЛОК measurer*/
+.measurer {
+    background-color: white;
+    padding-bottom: 129.56px;
+}
+
+.measurer-context {
+    display: flex;
+}
+
+.measurer__left {
+    background-image: url('../images/street.jpg');
+}
+
+.measurer__left_back {
+    width: 702px;
+    max-width: 1006;
+}
+
+.measurer-grid_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 102.24px 16.24px;
+    /*grid-column-gap: 16.24px;*/
+    width: 378px;
+    /*padding-left: calc(552px-(1006px-704px));*/
+    padding-left: 250px;
+}
+
+.measurer-grid_card_left {
+    display: flex;
+   /* margin-right: 16.24px;*/
+}
+
+.measurer-grid_text {
+    /* Our specialist will arrive for measurements per day contact, or appoint a date convenient for you */
+
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    width: 320px;
+}
+
+.round_01, .round_02, .round_03, .round_04 {
+        /* 01 */
+    background-image: url('../images/round.png');
+    background-size: auto;
+    background-position: center;
+    width: 41.76px;
+    height: 41.76px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.measurer__right {
+    width: 506px;
+    background-color: black;
+}
+
+.request-measurer-text {
+/* Leave a request for free departure of the measurer */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 28px 105px 39px 104px;
+    width: 297px;
+}
+
+.measurer-grid_right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-left: 49px;
+}
+
+.input-submit-measurer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    /* 
+    margin-bottom: 33.24px;*/
+    gap: 33px 50px;
+    flex-wrap: wrap;
+    padding: 39px 49px 27px 49px;
+}
+
+.input_field-measurer span {
+        /* Email */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*.request-measurer-info {
+    /* Email
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}*/
+
+.input_field-measurer {
+      /* What is your name: */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color: black;  
+}
+
+/*.request-measurer-input {
+    /* What is your name: 
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+
+.measurer-checkbox {
+        /* I agree to the processing of personal data 
+    padding-top: 16px;
+    padding-left: 49px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+}
+    
+.measurer-button {
+    padding-left: 244px;
+    padding-top: 39px;
+}
+*/
+
+.checkbox-measurer {
+        /* I agree to the processing of personal data*/
+    padding-top: 16px;
+    padding-left: 49px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+}
+
+
+.input_button-measurer {
+    padding-left: 244px;
+    padding-top: 27px;
+}
+
+.measurer-bottom {
+    display: flex;
+    background-color: white;
+}
+
+.measurer-bottom-picture {
+    padding-top: 38.44px;
+}
+
+.measurer-bottom-text {
+/* Help save 10 - 20% of the cost of materials */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    padding-top: 51px;
+}
+
+
+
+/*БЛОК СТИЛЕЙ*/
+
+/*.style {
+    padding-bottom: 69.14px;
+    position: absolute;
+    z-index: 1;
+}*/
+
+
+
+.style_list {
+    display: flex;
+    padding-top: 137.47px;
+    background-image: url('../images/back_style.jpg');
+    background-size: cover;
+   /* position: absolute;*/
+}
+
+/*.style-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .7)
+}*/
+
+.style__left_title {
+    /* We realize your wildest fantasies */
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding: 99px;
+    padding-top: 137.47px;
+    width: 411px;
+}
+
+.style__left_link a {
+    /* American classic */
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: white;
+    padding: 99px;
+    padding-top: 47px;
+}
+
+.style-grid_card {
+    display: grid;
+   /* grid-template-columns: 354px 354px;
+    grid-template-rows: 354px 354px;*/
+    grid-template-columns: 1fr 1fr;
+    gap: 43.19px 39.53px;
+}
+
+.style-grid_card_top_left {
+    margin-top: -201.56px;
+}
+
+.style-grid_card_top_right {
+    margin-top: -129.56px;
+}
+
+/*.style-grid_card_bottom_left {
+    margin-top: -797.94px;
+}
+
+.style-grid_card_bottom_right {
+    margin-top: -441.33px;
+}*/
+
+
+
+
+
+/*БЛОК КЛИЕНТОВ*/
+
+.client {
+    padding-top: 69.14px;  
+}
+
+.client-list {
+    background-color: white;
+}
+
+.client-top {
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    margin: 0 auto;
+}
+
+.client-top-title {
+    /* our clients */
+
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+
+}
+
+.client-top-picture {
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+
+.client-top-text {
+    /* 80% of our customers recommend us to their friends and family. */
+    width: 476px;
+    padding-bottom: 39px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+
+.client-card {
+    display: flex;
+}
+
+.client-card-maria {
+    width: 384px;
+    height: 455px;
+    margin-left: 42px;
+}
+
+.client-card-sergey,
+.client-card-egor {
+    width: 384px;
+    margin-left: 50px;
+}
+
+.maria-top,
+.sergey-top,
+.egor-top {
+    display: flex;
+}
+
+.maria-top-name,
+.sergey-top-name,
+.egor-top-name {
+    /* Fedosova Maria Konstantinovna */
+    padding: 41px 39px 23px;
+    width: 178px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+
+.maria-text,
+.sergey-text,
+.egor-text {
+    /* I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters. */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    /* or 23px */
+    color: #959595;
+}
+
+.maria-bottom,
+.sergey-bottom,
+.egor-bottom {
+    display: flex;
+    width: 293.65px;
+    background-color: #E3B873;
+    padding: -100px;
+}
+
+.maria-bottom-size-text,
+.maria-bottom-celender-text,
+.sergey-bottom-size-text,
+.sergey-bottom-celender-text,
+.egor-bottom-size-text,
+.egor-bottom-celender-text {
+    /* 40 m2 */
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+.client-bottom {
+    margin-top: -500px;
+    margin-left: 700px;
+
+}
+
+
+
+/*БЛОК обратной связи*/
+
+.contacts {
+    background-image: url('../images/question-back.jpg');
+    position: absolute;
+}
+
+.question-card-background {
+    width: 883px;
+    background-color: black;
+    margin: -300px auto;
+}
+
+.question-card {
+    width: 520x;
+    padding: 181.5px 34.4px;
+}
+
+.question-title {
+    /* have any questions? */
+
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 257px;
+}
+
+.input-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-person p,
+.input-question p {
+    /* Name */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-person-name,
+.input-person-phone,
+.input-question-text {
+/* What is your name: */
+
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.input-person-checkbox {
+/* I agree to the processing of personal data */
+
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 163.68%;
+    /* or 23px */
+    color: #FFFFFF;
+}
+
+.input-question-button {
+    margin: auto;
+    width: 200px;
+}
+
+.contact-info {
+    width: 589px;
+    margin: 0 auto;
+}
+
+.contact-info-text {
+    /* Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29 */
+
+
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 26px;
+}
+ .contact-info-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+@media (max-width: 1250px) {}
