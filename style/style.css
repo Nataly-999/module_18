@@ -15,12 +15,6 @@ h3,
 h4,
 h5,
 h6,
-h7,
-h8,
-h9,
-h10,
-h11,
-h12,
 p,
 ul {
     margin: 0;
@@ -43,7 +37,6 @@ ul {
     padding: 13px 33px;
     color: white;
     text-transform: uppercase;
-    /* font-style: italic; */
     cursor: pointer;
 }
 
@@ -57,7 +50,6 @@ ul {
     margin-left: 20px;
     color: white;
     text-transform: uppercase;
-    font-style: italic;
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
@@ -69,8 +61,18 @@ ul {
 }
 
 .header-mobile {
+    /* +7 (928) 768-32-39 */
     flex-shrink: 0;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
     color: #E3B873;
+    margin-right: 10px;
+
 }
 
 .header,
@@ -90,6 +92,9 @@ ul {
     margin: 0;
     padding: 0;
     margin-right: 25px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-navigation__item {
@@ -102,6 +107,20 @@ ul {
     margin-right: 0;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header--bottom {
+    position: static;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 /*
 БЛОК ПРОЕКТОВ
 */
@@ -115,19 +134,14 @@ ul {
 }
 
 .projects-slider__right img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .projects-slider__left {
     width: 442px;
     max-width: 45%;
-}
-
-.header-navigation {
-    list-style: none;
-    display: flex;
 }
 
 .projects-nav__item {
@@ -154,14 +168,13 @@ ul {
 
 .header-navigation__item a:hover,
 .projects-nav__item a:hover,
-.style__left_link a:hover {
+.style__left_item a:hover {
     color: #E3B873;
 }
 
 .hero {
     background-image: url('../images/hero.png');
     background-size: cover;
-    /* height: 707px; */
     padding: 194px 0 208px;
     position: relative;
 }
@@ -194,6 +207,8 @@ ul {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 19px;
+    width: 676px;
+    max-width: 100%;
 }
 
 .tittle-content {
@@ -208,7 +223,6 @@ ul {
     line-height: 25px;
     text-transform: uppercase;
     color: #E3B873;
-
 }
 
 .apartament-tittle-text {
@@ -235,6 +249,8 @@ ul {
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
+    width: 504px;
+    max-width: 100%;
 }
 
 .projects-text-content {
@@ -249,12 +265,10 @@ ul {
 
 .apartament-text-content {
     padding: 0px calc(324.45px - 184.12px);
-    /*padding: 0px 324.45px;*/
 }
 
 .request-text-content {
     padding: 0px calc(324.45px - 121.62px);
-    /*padding: 0px 324.45px;*/
 }
 
 .projects {
@@ -291,14 +305,13 @@ ul {
 }
 
 .projects-nav__link.active,
-.style__left_link.active
-{
+.style__left_link.active {
     color: #E3B873;
+    position: relative;
 }
 
 .projects-nav__link.active::after,
-.style__left_link.active::after
-{
+.style__left_link.active::after {
     content: "";
     position: absolute;
     left: 0;
@@ -325,7 +338,24 @@ ul {
 }
 
 .projects-text-content {
+
+    /* Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
     margin-bottom: 42px;
+}
+
+
+.projects-mobile__slider {
+    display: none;
+}
+
+.projects-mobile__sign {
+    display: none;
 }
 
 .projects-grid {
@@ -335,6 +365,7 @@ ul {
 }
 
 .projects-grid__card__title {
+    /*city*/
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -343,7 +374,10 @@ ul {
     text-transform: uppercase;
     color: #E3B873;
 }
+
 .projects-grid__card__text {
+    /*Rostov-on-Don
+LCD admiral*/
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -387,18 +421,17 @@ ul {
 }
 
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 /*
 БЛОК ввода данных
 */
 
 .input {
-    /* background-color: white; */
     position: relative;
     top: -200px;
 }
 
 .input-list {
-    /* background-color: white; */
     position: relative;
 }
 
@@ -408,9 +441,13 @@ ul {
 
 .repair-image {
     position: relative;
-    /* top: -200px; */
     margin: 0 auto;
     width: max-content;
+    max-width: 100%;
+}
+
+.repair-image>img {
+    width: 100%;
 }
 
 .play {
@@ -435,7 +472,10 @@ ul {
 }
 
 .request-text {
-    /* At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast. */
+    /* At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+    At any time, you can go to our website and monitor the progress of work in your apartment. 
+    You can watch the live broadcast from one of our facilities! 
+    Leave a request below and you will receive a link to the broadcast. */
 
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -445,6 +485,10 @@ ul {
     text-align: center;
     color: #363636;
     margin-bottom: 91.5px;
+    width: 681px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 91px
 }
 
 .input-submit {
@@ -453,19 +497,19 @@ ul {
     align-items: center;
     background: transparent;
     border: none;
-    /* border-bottom: 1px solid grey; */
     margin-bottom: 33.24px;
     gap: 33px 50px;
-    /*padding: 336px 91.5;*/
     flex-wrap: wrap;
 }
 
 .input_field {
+    font-family: 'Nunito Sans';
     display: flex;
     flex-direction: column;
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
+    max-width: 100%;
 }
 
 .input_field input {
@@ -488,15 +532,12 @@ ul {
 
 
 .checkbox input {
-    /* display: none; */
-    /* visibility: hidden; */
     opacity: 0;
     position: relative;
     right: -28px;
 }
 
-.checkbox input + span {
-    /* background: #E3B873; */
+.checkbox input+span {
     border-radius: 1px;
     width: 18px;
     height: 18px;
@@ -504,6 +545,15 @@ ul {
     align-items: center;
     justify-content: center;
     border: 1px solid #E3B873;
+    background-color: transparent; 
+}
+
+.checkbox input:checked + span::before {
+    content: '\2713\0020';  /*Символ галочки Unicode */
+    /*transform: rotate(45deg);*/
+    color: white;       /* Белый цвет галочки */
+    font-size: 14px;    /* Размер символа */
+    position: relative; /* Положение относительно родителя */
 }
 
 .checkbox input:checked+span {
@@ -542,11 +592,16 @@ ul {
     display: flex;
 }
 
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 /*
 БЛОК дизайна
 */
 
-.redecorating-text__item p,  .overhaul-text__item p, .designer-text__item p{
+.redecorating-text__item p,
+.overhaul-text__item p,
+.designer-text__item p {
     display: inline-block;
 }
 
@@ -554,22 +609,27 @@ ul {
     background-color: white;
     position: relative;
     padding-bottom: 124px;
+
 }
-/*.container .design-card {
-    border: 3px solid white;
+
+.design_card_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}*/
+    gap: 20px;
+}
 
 .design-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
-.design-card__text_redecorating, .design-card__text_overhaul, .design-card__text_designer {
+
+.design-card img {
+    width: 100%;
+}
+
+.design-card__text {
     width: 330px;
     height: 286px;
     font-family: 'Nunito Sans';
@@ -579,49 +639,36 @@ ul {
     line-height: 27px;
     color: #959595;
     background: #FFF;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin-top: calc(294px - 421px);
     display: flex;
     flex-direction: column;
+    padding: 25px 29px 54px 34px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
-.redecorating-title, .overhaul-title, .designer-title {
+.design-card__list {
+    padding: 0 14px;
+}
+
+
+.design-card__title {
+    /* Overhaul */
     font-family: 'Yeseva One';
     font-style: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: #363636;
+    padding-bottom: 13px;
 }
 
-.redecorating-title {
-    padding: 25px 68px 13px 34px;
-}
 
-.overhaul-title {
-    padding: 25px 88.3px 13px 31px;
-}
 
-.designer-title {
-    padding: 25px 88.3px 13px 31px;
-}
-.redecorating-text {
-    padding: 0 29px 54px 34px;
-}
+.design-card__button {
 
-.overhaul-text {
-    padding: 0 32px 36px 31px;
-}
-
-.designer-text {
-    padding: 0 32px 49px 31px;
-}
-
-.design-card__button-redecorating, .design-card__button-overhaul, .design-card__button-designer  {
-    width: 228px;
-    height: 54px;
+    padding: 17px 22px;
     background: #E3B873;
-    margin-top: auto;
-    margin-bottom: -28px;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -629,79 +676,21 @@ ul {
     line-height: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    border: none;
 }
 
-
-
-
-/*.design-card__picture {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 33.33%;
-    margin-right: 30px;
-}
-
- .design-card__text_overhaul, .design-card__text_designer {
-    width: 267px;
-    height: 178px;
-    background-color: white;
+.design-card__text {
     position: relative;
-    top: -100px;
-    margin-right: 92px;
-}*/
-
-.overhaul-title, .designer-title {
-    /* Redecorating */
-
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-size: 18px;
-    line-height: 25px;
-    color: #363636;
-}
-/*.design-card__text {
-     • Dismantling of old coatings • Wallpapering • Painting walls and ceilings • Laying flooring • Replacing plumbing • Replacing sockets and switches • Replacing doors 
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 27px;
-    color: #959595;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 33.33%;
-    margin-right: 92px;
-}*/
-
-
-.redecorating-text, .overhaul-text, .designer-text {
-    padding: 25px, 54px, 34px, 29px;
-
-}
-.redecorating-text__list, .overhaul-text__list, .designer-text__list {
-   /* border: 3px solid white;*/
-    list-style-type: disc;
-    list-style-position: inside;
 }
 
 .design-card__price {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.design-card__price_redecorating, .design-card__price_overhaul, .design-card__price_designer { 
-   /* from 900 rub / m2 */
-    width: 228px;
-    background-color: #E3B873;
-    color: white;
-    margin-right: 193px;   
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -712,10 +701,18 @@ ul {
 }
 
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 /*БЛОК measurer*/
 .measurer {
     background-color: white;
-    padding-bottom: 129.56px;
+    padding-bottom: 300px;
+    background-image: url('../images/street.jpg');
+    background-repeat: no-repeat;
+}
+
+.measurer__container {
+    display: flex;
+    gap: 210px;
 }
 
 .measurer-context {
@@ -723,7 +720,10 @@ ul {
 }
 
 .measurer__left {
-    background-image: url('../images/street.jpg');
+    padding: 12px 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .measurer__left_back {
@@ -731,65 +731,46 @@ ul {
     max-width: 1006;
 }
 
-.measurer-grid_left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 102.24px 16.24px;
-    /*grid-column-gap: 16.24px;*/
-    width: 378px;
-    /*padding-left: calc(552px-(1006px-704px));*/
-    padding-left: 250px;
-}
 
-.measurer-grid_card_left {
+.measurer__item {
     display: flex;
-   /* margin-right: 16.24px;*/
+    align-items: center;
+    gap: 30px;
+
 }
 
-.measurer-grid_text {
-    /* Our specialist will arrive for measurements per day contact, or appoint a date convenient for you */
-
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #363636;
-    width: 320px;
-}
-
-.round_01, .round_02, .round_03, .round_04 {
-        /* 01 */
-    background-image: url('../images/round.png');
-    background-size: auto;
-    background-position: center;
-    width: 41.76px;
-    height: 41.76px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
+.measurer__item__number {
     color: #FFFFFF;
+    background: #E3B873;
+    border: 8px solid #FFF;
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Yeseva One";
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    flex-shrink: 0;
 }
+
 
 .measurer__right {
-    width: 506px;
-    background-color: black;
+    background: #131313;
+    padding: 28px 49px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .request-measurer-text {
-/* Leave a request for free departure of the measurer */
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 28px 105px 39px 104px;
+    color: #FFF;
     width: 297px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
 }
 
 .measurer-grid_right {
@@ -806,15 +787,13 @@ ul {
     align-items: center;
     background: transparent;
     border: none;
-    /* 
-    margin-bottom: 33.24px;*/
     gap: 33px 50px;
     flex-wrap: wrap;
     padding: 39px 49px 27px 49px;
 }
 
 .input_field-measurer span {
-        /* Email */
+    /* Email */
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -823,18 +802,8 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/*.request-measurer-info {
-    /* Email
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 21px;
-    color: rgba(255, 255, 255, 0.5);
-}*/
-
 .input_field-measurer {
-      /* What is your name: */
+    /* What is your name: */
     display: flex;
     flex-direction: column;
     font-family: 'Nunito Sans';
@@ -842,69 +811,112 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 23px;
-    color: #FFFFFF;
-    background-color: black;  
+    color: #FFFFFF80;
+    width: 408px;
+    max-width: 100%;
+    gap: 7px;
 }
 
-/*.request-measurer-input {
-    /* What is your name: 
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
+.input_field-measurer input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF26;
+    line-height: 164%;
     font-size: 14px;
-    line-height: 23px;
-    color: #FFFFFF;
-    background-color: black;
+    padding: 6px;
 }
 
-
-.measurer-checkbox {
-        /* I agree to the processing of personal data 
-    padding-top: 16px;
-    padding-left: 49px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 163.68%;
-    color: #FFFFFF;
+.input_field-measurer input::placeholder {
+    color: #FFFFFF
 }
-    
+
+.measurer__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 16px;
+}
+
 .measurer-button {
     padding-left: 244px;
     padding-top: 39px;
 }
-*/
+
 
 .checkbox-measurer {
-        /* I agree to the processing of personal data*/
-    padding-top: 16px;
-    padding-left: 49px;
+    /* I agree to the processing of personal data*/
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 163.68%;
     color: #FFFFFF;
+    margin-bottom: 39px;
+    display: flex;
+    width: 285px;
+    max-width: 100%;
+    gap: 8px;
 }
 
+.checkbox-measurer input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.checkbox-measurer input+span {
+    border-radius: 1px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E3B873;
+    background-color: transparent; 
+}
+
+.checkbox-measurer input:checked + span::before {
+    content: '\2713\0020';  /*Символ галочки Unicode */
+    /*transform: rotate(45deg);*/
+    color: white;       /* Белый цвет галочки */
+    font-size: 14px;    /* Размер символа */
+    position: relative; /* Положение относительно родителя */
+}
+
+.checkbox-measurer input:checked+span {
+    background: #E3B873;
+}
 
 .input_button-measurer {
-    padding-left: 244px;
-    padding-top: 27px;
+    align-self: flex-end;
 }
 
 .measurer-bottom {
     display: flex;
-    background-color: white;
+    align-items: center;
+    position: absolute;
+    gap: 25px;
+    top: calc(100% + 40px);
 }
 
 .measurer-bottom-picture {
-    padding-top: 38.44px;
+    background: #E3B873;
+    border-radius: 50%;
+    width: 72px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .measurer-bottom-text {
-/* Help save 10 - 20% of the cost of materials */
+    /* Help save 10 - 20% of the cost of materials */
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -912,37 +924,54 @@ ul {
     line-height: 26px;
     color: #E3B873;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
-    padding-top: 51px;
 }
 
 
 
 /*БЛОК СТИЛЕЙ*/
 
-/*.style {
-    padding-bottom: 69.14px;
+.style {
+    background-image: url('../images/back_style.jpg');
+    background-size: cover;
+    /* filter: brightness(50%); */
+    position: relative;
+    padding: 138px 0 98px;
+}
+
+.style::after {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.style__container {
+    padding: 0 25px;
+    /* margin: 0 auto; */
+    width: 1290px;
+    max-width: 100%;
+    position: relative;
     z-index: 1;
-}*/
+}
+
 
 
 
 .style_list {
     display: flex;
     padding-top: 137.47px;
-    background-image: url('../images/back_style.jpg');
-    background-size: cover;
-   /* position: absolute;*/
+    position: relative;
 }
 
-/*.style-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(0, 0, 0, .7)
-}*/
+.style__left_list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+}
 
 .style__left_title {
     /* We realize your wildest fantasies */
@@ -953,64 +982,83 @@ ul {
     line-height: 37px;
     text-transform: uppercase;
     color: #E3B873;
-    padding: 99px;
-    padding-top: 137.47px;
-    width: 411px;
+    margin-bottom: 47px;
 }
 
-.style__left_link a {
-    /* American classic */
-    text-decoration: none;
+.style__left_item {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 38px;
     color: white;
-    padding: 99px;
-    padding-top: 47px;
 }
 
-.style-grid_card {
-    display: grid;
-   /* grid-template-columns: 354px 354px;
-    grid-template-rows: 354px 354px;*/
-    grid-template-columns: 1fr 1fr;
-    gap: 43.19px 39.53px;
+.style__left_item a {
+    color: white;
+    text-decoration: none;
 }
 
-.style-grid_card_top_left {
-    margin-top: -201.56px;
+.style__right-mobile {
+    display: none;
 }
 
-.style-grid_card_top_right {
-    margin-top: -129.56px;
+.style-mobile__sign {
+    display: none;
 }
 
-/*.style-grid_card_bottom_left {
-    margin-top: -797.94px;
+.style__right {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% + 160px);
+    gap: 36px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -112px;
+    right: 100px;
+    z-index: 1;
+    max-width: 50%;
 }
 
-.style-grid_card_bottom_right {
-    margin-top: -441.33px;
-}*/
+.style__right__card {
+    width: 354px;
+    max-width: 50%;
+    flex: 1;
+    object-fit: cover;
+}
+
+.style__right__card:first-child {
+    margin-top: 72px;
+    flex-shrink: 0;
+}
 
 
+.style__right__card:nth-child(2) {
+    flex-shrink: 3;
+}
+
+.style__right__card:nth-child(3) {
+    flex-shrink: 3;
+
+}
+
+.style__right__card:last-child {
+    margin-bottom: 80px;
+    flex-shrink: 0;
+}
 
 
 
 /*БЛОК КЛИЕНТОВ*/
-
+/*_________________________________________________________________________________________________________*/
 .client {
-    padding-top: 69.14px;  
-}
-
-.client-list {
-    background-color: white;
+    padding-top: 110px;
+    padding-bottom: 355px;
+    background: url("../images/city.svg") bottom center;
+    background-repeat: repeat no-repeat;
 }
 
 .client-top {
-    width: 257px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1035,11 +1083,12 @@ ul {
     list-style: none;
     display: flex;
     margin: auto;
+    gap: 13px;
 }
 
 .client-top-text {
     /* 80% of our customers recommend us to their friends and family. */
-    width: 476px;
+    /*width: 476px;*/
     padding-bottom: 39px;
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -1050,46 +1099,45 @@ ul {
     color: #363636;
 }
 
-.client-card {
+.client_card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 24px 40px;
+}
+
+.client_card-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
-.client-card-maria {
-    width: 384px;
-    height: 455px;
-    margin-left: 42px;
-}
-
-.client-card-sergey,
-.client-card-egor {
-    width: 384px;
-    margin-left: 50px;
-}
-
-.maria-top,
-.sergey-top,
-.egor-top {
+.client_card-top {
     display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    left: 0px;
+    gap: 23px;
+    margin-bottom: 24px;
 }
 
-.maria-top-name,
-.sergey-top-name,
-.egor-top-name {
+.client_card-top-photo img {
+    border-radius: 50%;
+}
+
+.client_card-top-name {
     /* Fedosova Maria Konstantinovna */
-    padding: 41px 39px 23px;
-    width: 178px;
+    /* padding: 41px 39px 23px; */
+    /* width: 178px; */
     font-family: 'Yeseva One';
-    font-style: normal;
+    font-style: bold;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color: #181818;
 }
 
-
-.maria-text,
-.sergey-text,
-.egor-text {
+.client_card-top-text {
     /* I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters. */
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -1100,21 +1148,41 @@ ul {
     color: #959595;
 }
 
-.maria-bottom,
-.sergey-bottom,
-.egor-bottom {
-    display: flex;
-    width: 293.65px;
+
+.client_card-bottom {
+    display: inline-flex;
     background-color: #E3B873;
-    padding: -100px;
+    position: relative;
+    left: 0;
+    bottom: -48px;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
-.maria-bottom-size-text,
-.maria-bottom-celender-text,
-.sergey-bottom-size-text,
-.sergey-bottom-celender-text,
-.egor-bottom-size-text,
-.egor-bottom-celender-text {
+
+.client_card-bottom {
+    background: #E3B873;
+}
+
+
+.client_card-bottom__part {
+    padding: 10px 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.client_card-bottom__part:first-child {
+    border-right: 1px solid #FFF;
+}
+
+.client_card-bottom__part img {
+    width: 32px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+}
+
+.client_card-bottom-size-text,
+.client_card-bottom-celender-text {
     /* 40 m2 */
     font-family: 'Yeseva One';
     font-style: normal;
@@ -1122,7 +1190,7 @@ ul {
     line-height: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
-    }
+}
 
 .client-bottom {
     margin-top: -500px;
@@ -1136,21 +1204,38 @@ ul {
 
 .contacts {
     background-image: url('../images/question-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contacts::after {
+    content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+
 }
 
-.question-card-background {
+.contacts__inner {
+    position: relative;
+    top: -222px;
+    z-index: 1;
+}
+
+.contacts-background {
     width: 883px;
+    max-width: 100%;
     background-color: black;
-    margin: -300px auto;
+    margin: 0 auto;
+    padding: 35px 180px;
+    margin-bottom: 52px;
 }
 
-.question-card {
-    width: 520x;
-    padding: 181.5px 34.4px;
-}
-
-.question-title {
+.contacts-title {
     /* have any questions? */
 
     font-family: 'Yeseva One';
@@ -1162,65 +1247,119 @@ ul {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 auto;
-    width: 257px;
+    margin-bottom: 46px;
+    /* padding-top: 34px; */
 }
 
-.input-person {
+.contacts__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    /* margin: 34px 181px; */
+}
+
+.contacts__fields-person {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.input-person p,
-.input-question p {
-    /* Name */
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 21px;
-    color: rgba(255, 255, 255, 0.5);
+    gap: 58px;
 }
 
-.input-person-name,
-.input-person-phone,
-.input-question-text {
-/* What is your name: */
-
+.contacts__input_field {
+    /* What is your name: */
+    display: flex;
+    flex-direction: column;
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 23px;
-    color: #FFFFFF;
-    background-color: black;
+    color: #FFFFFF80;
+    /* background-color: black;   */
+    flex: 1;
+    max-width: 100%;
+    gap: 7px;
 }
 
-.input-person-checkbox {
-/* I agree to the processing of personal data */
+.contacts__input_field input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF26;
+    line-height: 164%;
+    font-size: 14px;
+    padding: 6px;
+}
 
+.contacts__input_field input::placeholder {
+    color: #FFFFFF
+}
+
+
+.contacts__input_button {
+    margin: auto;
+    /* margin-bottom: 34px; */
+    width: 200px;
+    max-width: 100%;
+}
+
+
+.checkbox-contacts {
+    /* I agree to the processing of personal data*/
+    /* padding-top: 16px; */
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 163.68%;
-    /* or 23px */
     color: #FFFFFF;
+    margin-bottom: 39px;
+    display: flex;
+    /* width: 285px; */
+    max-width: 100%;
+    gap: 8px;
+    margin: 0 auto;
 }
 
-.input-question-button {
-    margin: auto;
-    width: 200px;
+.checkbox-contacts input {
+    opacity: 0;
+    margin-right: -28px;
+}
+
+.checkbox-contacts input+span {
+    border-radius: 1px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E3B873;
+    background-color: transparent; 
+}
+
+
+.checkbox-contacts input:checked + span::before {
+    content: '\2713\0020';  /*Символ галочки Unicode */
+    /*transform: rotate(45deg);*/
+    color: white;       /* Белый цвет галочки */
+    font-size: 14px;    /* Размер символа */
+    position: relative; /* Положение относительно родителя */
+}
+.checkbox-contacts input:checked+span {
+    background: #E3B873;
 }
 
 .contact-info {
     width: 589px;
-    margin: 0 auto;
+    margin: 0 auto 43px;
+    max-width: 100%;
+    /* margin-bottom: 43px; */
 }
 
 .contact-info-text {
     /* Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29 */
-
-
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -1230,13 +1369,603 @@ ul {
     text-transform: uppercase;
     color: #E3B873;
     margin-bottom: 26px;
+    max-width: 100%;
 }
- .contact-info-picture {
+
+.contact-info-picture {
     display: flex;
     justify-content: center;
     align-items: center;
- }
+    gap: 15px;
+}
+
+.map-mobile {
+    display: none;
+}
+
+.map {
+    width: 925px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.burger-icon {
+    display: none;
+}
+
+.burger-icon span {
+    display: block;
+    height: 5px;
+    width: 45px;
+    background-color: #FFF;
+}
+
+.burger-icon span:nth-child(2) {
+    margin: 6px 0;
+}
 
 
 
-@media (max-width: 1250px) {}
+/*-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+*/
+
+
+@media (max-width: 1170px) {
+    .header-navigation {
+        gap: 10px 20px;
+        margin-right: 15px;
+    }
+
+    .header-navigation__item {
+        margin: 0;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    .projects-nav {
+        padding: 0 20px;
+    }
+
+    /* ВИДЫ РЕМОНТА */
+    .design_card_container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px 30px;
+    }
+
+    .design-card:last-child {
+        align-self: center;
+        flex: initial;
+        /*flex: none;*/
+    }
+
+    /* ФОРМА */
+    .measurer__container {
+        gap: 30px;
+    }
+
+    .measurer__right {
+        padding: 20px 30px;
+        max-width: 60%;
+    }
+
+    .client_card-container {
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+*/
+
+
+@media (max-width: 768px) {
+
+    .header-navigation {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block;
+        /* height: 2px; */
+        width: 24px;
+        order: 1;
+    }
+
+
+    .burger-icon span {
+        display: block;
+        height: 2px;
+        width: 24px;
+    }
+
+    .header-mobile {
+        /* +7 (928) 768-32-39 */
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+
+    .header-content,
+    .menu {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 142px 0 61px;
+    }
+
+    .hero__button {
+        margin-bottom: 26px;
+        width: 100%;
+    }
+
+    .hero__main {
+        padding: 0 18px;
+    }
+
+    .tittle {
+        /* Turnkey Repair in the city of Rostov-on-Don */
+        font-size: 23px;
+        line-height: 132.83%;
+        margin-bottom: 16px;
+    }
+
+    .text-content {
+        /* Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work */
+        font-size: 14px;
+        line-height: 135.84%;
+        width: 339px;
+    }
+
+    .button {
+        padding: 19px 69px;
+    }
+
+    /*.header-button {
+        margin-right: 200px;
+    }*/
+    .button-none {
+        padding: 19px 86px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .button-none span {
+        display: none;
+    }
+
+
+    /*БЛОК ПРОЕКТЫ*/
+
+    .projects {
+        padding: 36px 0 40px;
+    }
+
+    .projects-nav {
+        display: none;
+    }
+
+    .projects-slider {
+        /* display: block; */
+        justify-content: center;
+    }
+
+    .projects-main {
+        margin: 0 auto;
+        padding: 0 18px;
+    }
+
+    .projects-tittle {
+        /* Completed projects */
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        /*width: 253px;*/
+    }
+
+    .projects-slider__left {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-mobile__slider {
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+
+    }
+
+    .projects-mobile__slider img {
+        width: max-content;
+        max-width: 100%;
+    }
+
+    .projects-mobile__sign {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 18px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0 15px;
+    }
+
+    .projects-mobile__sign img {
+        width: 36px;
+    }
+
+    .projects-mobile__sign__button {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+
+    .projects-text-content {
+        /* Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families */
+        font-size: 11px;
+        line-height: 158.48%;
+        text-align: center;
+        width: 311px;
+    }
+
+    .projects-grid {
+        margin-top: 36.5px;
+        gap: 27px 101px;
+    }
+
+    .projects-grid__card__title {
+        /*city*/
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+
+    .projects-grid__card__text {
+        /*Rostov-on-Don
+    LCD admiral*/
+        font-size: 11px;
+        line-height: 135.84%;
+    }
+
+    .projects-bottom {
+        margin: 58px auto 0;
+    }
+
+    .projects-bottom__left {
+        display: none;
+    }
+
+    .projects-slider__right {
+        display: none;
+    }
+
+    .control-tittle {
+        /* online control */
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+
+
+    /*ВВОД ДАННЫХ*/
+
+
+    .input {
+        background-color: #000;
+        top: 0;
+        z-index: 1;
+    }
+
+    .request-text {
+        /* At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+        At any time, you can go to our website and monitor the progress of work in your apartment. 
+        You can watch the live broadcast from one of our facilities! 
+        Leave a request below and you will receive a link to the broadcast. */
+
+        font-size: 11px;
+        line-height: 169.8%;
+        color: #FFFFFF;
+        margin-bottom: 61px;
+    }
+
+    .input-submit {
+        /* display: grid; */
+        /* align-items: center; */
+        align-items: stretch;
+        margin-bottom: 0;
+        position: relative;
+        bottom: -25px;
+    }
+
+    .input_field {
+        font-size: 14px;
+        line-height: 138.72%;
+        color: #FFFFFF;
+        width: 100%;
+        gap: 7px;
+        order: 1;
+    }
+
+    .input_field span {
+        /* Email */
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .input_field input {
+        background: none;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+        line-height: 164%;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .input_field input::placeholder {
+        color: #FFFFFF
+    }
+
+    .input_button {
+        width: 100%;
+        order: 2;
+    }
+
+    .checkbox {
+        order: 1;
+        color: #FFF;
+    }
+    /*БЛОК ДИЗАЙНА*/
+
+    .design {
+        padding-bottom: 0;
+    }
+
+    .type-repair-title {
+    /* TYPES OF REPAIR */
+    padding-top: 58px;
+    }
+
+
+    .design-card {
+        align-self: center;
+        flex: initial;
+        padding-bottom: 79px;
+        /*flex: none;*/
+    }
+
+      .design-card__text {
+        align-self: start;
+        padding: 21px 41px 37px 31px;
+        /*flex: none;*/
+    }
+
+     .design-card__tittle {
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 138.6%;
+    }
+
+    .measurer {
+        display: none;
+    }
+
+    .client {
+        display: none;
+    }
+
+
+    /*БЛОК СТИЛЕЙ*/
+
+    .style {
+        background-image: none;
+        padding: 0;
+    }
+
+    .style::after {
+        background: none;
+    }
+
+
+    .style__left_title {
+        text-align: center;
+    }
+
+
+    .style__left_list {
+        display: none;
+    }
+
+   /* .style__right-mobile {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: -270px;
+
+    }*/
+
+    .style__right {
+        /* display: none; */
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 242px;
+        width: 420px;
+        max-width: 100%;
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .style__right__card {
+        margin: 0 !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 100%;
+        z-index: 1;
+    }
+
+
+    .style__right__card:first-child {
+     /*   position: relative; 03.09*/
+       /* z-index: 2;*/
+        z-index: 3; /*03.09*/
+    }
+
+    .style__right__card:nth-last-of-type(1) 
+    {
+        z-index: 2; /* Четвертая картинка опускается ниже первой */
+    }
+
+    .style-mobile__sign {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 18px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0 15px;
+        /*z-index: 3;*/
+        z-index: 4;
+
+    }
+
+    .style-mobile__sign img {
+        width: 36px;
+    }
+
+    .style-mobile__sign__button {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+
+    .contacts__inner {
+        top: 0;
+    }
+
+    .contacts__fields-person {
+        display: inline;
+    }
+
+    .contacts-background {
+        max-width: 100%;
+        background-color: black;
+        padding: 222px 50px 0px;
+        margin-top: -100px;
+    }
+
+    .contacts::after {
+        background: black;
+    }
+    .footer {}
+}
+
+
+@media (max-width: 620px) {
+    .header-button {
+        display: none;
+    }
+
+
+}
+
+
+@media (max-width: 376px) {
+    .burger-icon {
+        display: none;
+    }
+
+    .header--bottom {
+        display: none;
+    }
+
+    .request-text {
+        margin-bottom: 61px;
+    }
+
+    .line_55 {
+    /* line_55 */
+    margin: 28px auto 0;
+    margin-bottom: 22px;
+}
+    .design-card {
+        padding-bottom: 59px;
+    }
+    .design_card_container {
+        gap: 0;
+    }
+
+    .design-card__text {
+        width: 260px;
+        font-size: 13px;
+        line-height: 169.8%;
+        padding: 21px 0px 37px 31px;
+    }
+
+    .design-card__button {
+        padding: 11px 19px;
+    }
+    .contacts-background {
+        padding: 222px 50px 50px 18px;
+    }
+
+    .contacts__input_button {
+        width: 100%;
+        margin-bottom: 46px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .map-mobile {
+        display: flex;
+    }
+
+    .map img {
+        margin-top: -100px;
+        margin-bottom: 41px;
+    }
+
+    .contacts {
+        background: #000;
+    }
+}

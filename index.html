@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style/style.css">
+    <!-- <link rel="stylesheet" href="./style/style-mobile.css"> -->
     <link
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
@@ -29,10 +30,15 @@
                     <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
                 </ul>
             </nav>
+            <a href="#" class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
             <div class="header-mobile">
                 +7(928) 768-32-39
             </div>
-            <button class="button">Request a call</button>
+            <button class="button header-button">Request a call</button>
         </div>
     </header>
     <main class="list">
@@ -40,16 +46,19 @@
             <div class="container hero-container">
                 <div class="hero__main">
                     <h1 class="tittle">
-                        Turnkey Repair in the <br>
+                        Turnkey Repair in the
                         city of <span class="yellow">Rostov-on-Don</span>
                     </h1>
                     <h3 class="text-content">
-                        Get ready-made turnkey repairs on time <br>
-                        with work time saving up to 45 days and 20% from <br>
+                        Get ready-made turnkey repairs on time
+                        with work time saving up to 45 days and 20% from
                         cost of materials due to the organization of work
                     </h3>
-                    <button class="button">CALCULATE THE COST</button>
-                    <button class="button-none">SUBMIT YOUR APPLICATION</button>
+                    <button class="button hero__button">CALCULATE THE COST</button>
+                    <button class="button-none">
+                        <span>SUBMIT YOUR</span>
+                        APPLICATION
+                    </button>
                 </div>
             </div>
             <div class="hero-overlay">
@@ -79,10 +88,23 @@
                                 Completed<br> projects
                             </h2>
                             <p class="projects-text-content">
-                                Only a small part of the work performed by our company is presented<br>
-                                on the site. For 14 years on in the construction<br>
+                                Only a small part of the work performed by our company is presented
+                                on the site. For 14 years on in the construction
                                 market we have made happy more than 1000 families
                             </p>
+                            <div class="projects-mobile__slider">
+                                <img src="./images/projects-mobile__slider.jpg" alt="projects-mobile__slider">
+                                
+
+                                <div class="projects-mobile__sign">
+                                    <button class="projects-mobile__sign__button">
+                                        <img src="./images/left.svg" alt="left-sign">
+                                    </button>
+                                    <button class="projects-mobile__sign__button">
+                                        <img src="./images/right.svg" alt="right-sign">
+                                    </button>
+                                </div>
+                            </div>
 
                             <div class="projects-grid">
                                 <div class="projects-grid__card">
@@ -159,9 +181,9 @@
                         <img src="./images/line_55.svg" alt="line_55">
                     </div>
                     <p class="request-text">
-                        At each facility, a camera is installed that broadcasts the progress of work on the<br>
-                        clock. At any time, you can go to our website and monitor the progress of work in<br>
-                        your apartment. You can watch the live broadcast from one of our facilities!<br>
+                        At each facility, a camera is installed that broadcasts the progress of work on the
+                        clock. At any time, you can go to our website and monitor the progress of work in
+                        your apartment. You can watch the live broadcast from one of our facilities!
                         Leave a request below and you will receive a link to the broadcast.
                     </p>
 
@@ -183,11 +205,11 @@
                         <label class="checkbox">
                             <input type="checkbox" required>
                             <span>
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                <!--<svg width="10" height="8" viewBox="0 0 10 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264" stroke="white"
                                         stroke-width="1.5" />
-                                </svg>
+                                </svg>-->
                             </span>
                             <span>I agree to the processing of personal data</span>
                         </label>
@@ -211,221 +233,174 @@
                 </div>
 
 
+                <div class="design_card_container">
+                    <div class="design-card">
+                        <img src="./images/redecorating.jpg" alt="redecorating">
+                        <div class="design-card__text">
+                            <h3 class="design-card__title">
+                                Redecorating
+                            </h3>
 
-                <div class="design-card">
-                    <img src="./images/redecorating.jpg" alt="redecorating">
-                    <div class="design-card__text_redecorating">
-                        <h3 class="redecorating-title">
-                            Redecorating
-                        </h3>
-                        <div class="redecorating-text">
-                            <ul class="redecorating-text__list">
-                                <li class="redecorating-text__item">
+                            <ul class="design-card__list">
+                                <li class="design-card__list__item">
                                     <p>Dismantling of old coatings</p>
                                 </li>
-                                <li class="redecorating-text__item">
+                                <li class="design-card__list__item">
                                     <p>Wallpapering</p>
                                 </li>
-                                <li class="redecorating-text__item">
+                                <li class="design-card__list__item">
                                     <p>Painting walls and ceilings</p>
                                 </li>
-                                <li class="redecorating-text__item">
+                                <li class="design-card__list__item">
                                     <p>Laying flooring</p>
                                 </li>
-                                <li class="redecorating-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing plumbing</p>
                                 </li>
-                                <li class="redecorating-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing sockets and switches</p>
                                 </li>
-                                <li class="redecorating-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing doors</p>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="design-card__button-redecorating">
-                            <p>From 900 rub / m2</p>
+
+                            <button class="design-card__button">
+                                <p>From 900 rub / m2</p>
+                            </button>
                         </div>
                     </div>
-                    <img src="./images/overhaul.jpg" alt="overhaul">
-                    <div class="design-card__text_overhaul">
-                        <h3 class="overhaul-title">
-                            Overhaul
-                        </h3>
-                        <div class="overhaul-text">
-                            <ul class="overhaul-text__list">
-                                <li class="overhaul-text__item">
+
+                    <div class="design-card">
+                        <img src="./images/overhaul.jpg" alt="redecorating">
+                        <div class="design-card__text">
+                            <h3 class="design-card__title">
+                                Overhaul
+                            </h3>
+
+                            <ul class="design-card__list">
+                                <li class="design-card__list__item">
                                     <p>Dismantling of old coatings</p>
                                 </li>
-                                <li class="overhaul-text__item">
+                                <li class="design-card__list__item">
                                     <p>Wallpapering</p>
                                 </li>
-                                <li class="overhaul-text__item">
+                                <li class="design-card__list__item">
                                     <p>Painting walls and ceilings</p>
                                 </li>
-                                <li class="overhaul-text__item">
+                                <li class="design-card__list__item">
                                     <p>Laying flooring</p>
                                 </li>
-                                <li class="overhaul-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing plumbing</p>
                                 </li>
-                                <li class="overhaul-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing sockets and switches</p>
                                 </li>
-                                <li class="overhaul-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing doors</p>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="design-card__button-overhaul">
-                            <p>From 1800 rub / m2</p>
+
+                            <button class="design-card__button">
+                                <p>From 1800 rub / m2</p>
+                            </button>
                         </div>
                     </div>
-                    <img src="./images/designer.jpg" alt="designer">
-                    <div class="design-card__text_designer">
-                        <h3 class="designer-title">
-                            Designer Repair
-                        </h3>
-                        <div class="designer-text">
-                            <ul class="designer-text__list">
-                                <li class="designer-text__item">
+
+                    <div class="design-card">
+                        <img src="./images/designer.jpg" alt="redecorating">
+                        <div class="design-card__text">
+                            <h3 class="design-card__title">
+                                Designer Repair
+                            </h3>
+
+                            <ul class="design-card__list">
+                                <li class="design-card__list__item">
                                     <p>Dismantling of old coatings</p>
                                 </li>
-                                <li class="designer-text__item">
+                                <li class="design-card__list__item">
                                     <p>Wallpapering</p>
                                 </li>
-                                <li class="designer-text__item">
+                                <li class="design-card__list__item">
                                     <p>Painting walls and ceilings</p>
                                 </li>
-                                <li class="designer-text__item">
+                                <li class="design-card__list__item">
                                     <p>Laying flooring</p>
                                 </li>
-                                <li class="designer-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing plumbing</p>
                                 </li>
-                                <li class="designer-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing sockets and switches</p>
                                 </li>
-                                <li class="designer-text__item">
+                                <li class="design-card__list__item">
                                     <p>Replacing doors</p>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="design-card__button-designer">
-                            <p>From 4000 rub / m2</p>
+
+                            <button class="design-card__button">
+                                <p>From 4000 rub / m2</p>
+                            </button>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
 
 
         <section class="measurer">
-            <div class="container">
+            <div class="container measurer__container">
                 <div class="measurer-context">
                     <div class="measurer__left">
-                        <div class="measurer__left_back">
+
+                        <div class="measurer__item">
+                            <div class="measurer__item__number">
+                                01
+                            </div>
+
+                            <p class="measurer-grid_text">
+                                Our specialist will arrive for measurements per day contact, or appoint a date
+                                convenient for you
+                            </p>
                         </div>
-                        <div class="measurer-grid_left">
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_card_picture">
-                                    <p class="round_01">
-                                        01
-                                    </p>
-                                </div>
+                        <div class="measurer__item">
+                            <div class="measurer__item__number">
+                                02
                             </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_text">
-                                    <p>
-                                        Our specialist will arrive for measurements per day contact, or appoint a date
-                                        convenient for you
-                                    </p>
-                                </div>
+
+                            <p class="measurer-grid_text">
+                                Free metering
+                            </p>
+                        </div>
+                        <div class="measurer__item">
+                            <div class="measurer__item__number">
+                                03
                             </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_card_picture">
-                                    <p class="round_02">
-                                        02
-                                    </p>
-                                </div>
+
+                            <p class="measurer-grid_text">
+                                Free consultation
+                            </p>
+                        </div>
+                        <div class="measurer__item">
+                            <div class="measurer__item__number">
+                                04
                             </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_text">
-                                    <p>
-                                        Free metering
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_card_picture">
-                                    <p class="round_03">
-                                        03
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_text">
-                                    <p>
-                                        Free consultation
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_card_picture">
-                                    <p class="round_04">
-                                        04
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="measurer-grid_card_left">
-                                <div class="measurer-grid_text">
-                                    <p>
-                                        Get a cost estimate and the timing of your future repairs
-                                    </p>
-                                </div>
-                            </div>
+
+                            <p class="measurer-grid_text">
+                                Get a cost estimate and the timing of your future repairs
+                            </p>
                         </div>
                     </div>
-                    <div class="measurer__right">
-                        <p class="request-measurer-text">
-                            Leave a request for free departure of the measurer
-                        </p>
+                </div>
+                <form class="measurer__right">
+                    <p class="request-measurer-text">
+                        Leave a request for free departure of the measurer
+                    </p>
 
-
-                    <!--    <div class="measurer-grid_right">
-                            <div class="measurer-grid_card_right">
-                                <form class="request-measurer-info">
-                                    <p>Name</p> <br>
-                                    <input class="request-measurer-input" type="text" name="Name"
-                                        value="What is your name:">
-                                </form>
-                            </div>
-                            <div class="measurer-grid_card_right">
-                                <form class="request-measurer-info">
-                                    <p>Phone</p> <br>
-                                    <input class="request-measurer-input" type="text" name="Phone"
-                                        value="Your phone number:">
-                                </form>
-                            </div>
-                            <div class="measurer-grid_card_right">
-                                <form class="request-measurer-info">
-                                    <p>Email</p> <br>
-                                    <input class="request-measurer-input" type="text" name="Email" value="Your email:">
-                                </form>
-                            </div>
-                        </div>
-                        <form class="measurer-checkbox">
-                            <input type="checkbox">
-                            I agree to the processing of personal data
-                        </form>
-                        <div class="measurer-button">
-                            <button class="button" type="submit">
-                                call the measurer
-                            </button> <br>
-                        </div>-->
-
-                    <form class="input-submit-measurer">
+                    <div class="measurer__fields">
                         <label class="input_field-measurer">
                             <span>Name</span>
                             <input type="text" placeholder="What is your name:">
@@ -440,140 +415,131 @@
                             <span>Email</span>
                             <input type="text" placeholder="Your email:">
                         </label>
+                    </div>
 
-                        <label class="checkbox-measurer">
-                            <input type="checkbox" required>
-                            <span>
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264" stroke="white"
-                                        stroke-width="1.5" />
-                                </svg>
-                            </span>
-                            <span>I agree to the processing of personal data</span>
-                        </label>
+                    <label class="checkbox-measurer">
+                        <input type="checkbox" id="personal-data-consent" name="personal_data_consent" required>
+                        <span>
+                            <!--<svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264" stroke="white"
+                                    stroke-width="1.5" />
+                            </svg>-->
+                        </span>
+                        <span>I agree to the processing of personal data</span>
+                    </label>
 
-                        <button class="button input_button-measurer" type="submit">
-                            call the measurer
-                        </button>
-                        
-                    </form>
-
+                    <button class="button input_button-measurer" type="submit">
+                        call the measurer
+                    </button>
 
 
-
-                        <div class="measurer-bottom">
-                            <div class="measurer-bottom-picture">
-                                <img src="./images/pig.png" alt="pig">
-                            </div>
-                            <div class="measurer-bottom-text">
-                                <p>
-                                    Help save 10 - 20% of the cost of materials
-                                </p>
-                            </div>
+                    <div class="measurer-bottom">
+                        <div class="measurer-bottom-picture">
+                            <img src="./images/pig_vector.svg" alt="pig">
+                        </div>
+                        <div class="measurer-bottom-text">
+                            <p>
+                                Help save 10 - 20% of the cost of materials
+                            </p>
                         </div>
                     </div>
-                </div>
+                </form>
+            </div>
             </div>
         </section>
 
 
         <section class="style">
-            <div class="container">
-                <div class="style_list">
-                    <div class="style__left">
-                        <h7 class="style__left_title">
-                            We realize your wildest fantasies
-                        </h7>
-                        <ul class="style__left_list">
-                            <li class="style__left_link">
-                                <a href="#">American classic</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Empire</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Classical</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Loft</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Minimalism</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Provence</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Romanticism</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Scandinavian style</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Mediterranean style</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">High tech</a>
-                            </li>
-                            <li class="style__left_link">
-                                <a href="#">Eclecticism</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="style__right">
-                        <div class="style-grid">
-                            <div class="style-grid_card">
-                                <div class="style-grid_card_top_left">
-                                    <img src="./images/style_top_left.jpg" alt="top-left">
-                                </div>
-                                <div class="style-grid_card_top_right">
-                                    <img src="./images/style_top_right.jpg" alt="top-right">
-                                </div>
-                                <div class="style-grid_card_bottom_left">
-                                    <img src="./images/style_bottom_left.png" alt="bottom-left">
-                                </div>
-                                <div class="style-grid_card_bottom_right">
-                                    <img src="./images/style_bottom_right.jpg" alt="bottom-right">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="style-overlay">
+            <div class="style__container container">
+                <div class="style__left">
+                    <h2 class="style__left_title">
+                        We realize your <br> wildest fantasies
+                    </h2>
+                    <ul class="style__left_list">
+                        <li class="style__left_item">
+                            <a class="style__left_link active" href="#">American classic</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Empire</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Classical</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Loft</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Minimalism</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Provence</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Romanticism</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Scandinavian style</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Mediterranean style</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">High tech</a>
+                        </li>
+                        <li class="style__left_item">
+                            <a class="style__left_link" href="#">Eclecticism</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+            <div class="style__right">
+                <div class="style-mobile__sign">
+                    <button class="style-mobile__sign__button">
+                        <img src="./images/left.svg" alt="left-sign">
+                    </button>
+                    <button class="style-mobile__sign__button">
+                        <img src="./images/right.svg" alt="right-sign">
+                    </button>
+                </div>
+                <img class="style__right__card" src="./images/style_top_left.jpg" alt="top-left">
 
+                <img class="style__right__card" src="./images/style_bottom_left.png" alt="bottom-left">
+
+                <img class="style__right__card" src="./images/style_top_right.jpg" alt="top-right">
+
+                <img class="style__right__card" src="./images/style_bottom_right.jpg" alt="bottom-right">
+            </div>
+        </section>
 
 
         <section class="client">
             <div class="container">
                 <div class="client-list">
                     <div class="client-top">
-                        <h8 class="client-top-title">
+                        <h2 class="client-top-title">
                             our clients
-                        </h8>
+                        </h2>
                         <div class="client-top-picture">
                             <img src="./images/line.svg" alt="line">
                             <img src="./images/hands.svg" alt="hands">
                             <img src="./images/line.svg" alt="line">
                         </div>
                         <p class="client-top-text">
-                            80% of our customers recommend us to their friends and family.
+                            80% of our customers recommend us to their<br> friends and family.
                         </p>
                     </div>
-                    <div class="client-card">
-                        <div class="client-card-maria">
-                            <div class="maria-top">
-                                <div class="maria-top-photo">
+                    <div class="client_card-container">
+                        <div class="client_card">
+                            <div class="client_card-top">
+                                <div class="client_card-top-photo">
                                     <img src="./images/maria-photo.jpg" alt="maria">
                                 </div>
-                                <h9 class="maria-top-name">
+                                <h3 class="client_card-top-name">
                                     Fedosova Maria Konstantinovna
-                                </h9>
+                                </h3>
                             </div>
-                            <p class="maria-text">
+                            <p class="client_card-top-text">
                                 I want to thank the guys for their work. We put your shower part in repair. I am very
                                 grateful that I referred to the repair as to my own.
                                 Great thanks I express the project to Georgia for its professionalism and approach.
@@ -581,34 +547,34 @@
                                 Team mobile and professional. Works performed qualitatively without comments.
                                 Quality satisfied. Prices democratic. I recommend these masters.
                             </p>
-                            <div class="maria-bottom">
-                                <div class="maria-bottom-size-picture">
-                                    <img src="./images/maria-size.svg" alt="size">
-                                </div>
-                                <p class="maria-bottom-size-text">
-                                    40 м2
-                                </p>
-                                <div class="line">
 
+                            <div class="client_card-bottom">
+                                <div class="client_card-bottom__part client_card-bottom__size">
+                                    <img src="./images/maria-size.svg" alt="size">
+
+                                    <p class="client_card-bottom-size-text">
+                                        40 м2
+                                    </p>
                                 </div>
-                                <div class="maria-bottom-celender-picture">
+                                <div class="client_card-bottom__part client_card-bottom__days">
                                     <img src="./images/maria-celender.svg" alt="celender">
+
+                                    <p class="client_card-bottom-celender-text">
+                                        48 days
+                                    </p>
                                 </div>
-                                <p class="maria-bottom-celender-text">
-                                    28 days
-                                </p>
                             </div>
                         </div>
-                        <div class="client-card-sergey">
-                            <div class="sergey-top">
-                                <div class="sergey-top-photo">
+                        <div class="client_card">
+                            <div class="client_card-top">
+                                <div class="client_card-top-photo">
                                     <img src="./images/sergey-photo.jpg" alt="sergey">
                                 </div>
-                                <h10 class="sergey-top-name">
+                                <h3 class="client_card-top-name">
                                     Afanasyev Sergey Alexandrovich
-                                </h10>
+                                </h3>
                             </div>
-                            <p class="sergey-text">
+                            <p class="client_card-top-text">
                                 I want to thank the guys for their work. We put your shower part in repair. I am very
                                 grateful that I referred to the repair as to my own.
                                 Great thanks I express the project to Georgia for its professionalism and approach.
@@ -616,34 +582,33 @@
                                 Team mobile and professional. Works performed qualitatively without comments.
                                 Quality satisfied. Prices democratic. I recommend these masters.
                             </p>
-                            <div class="sergey-bottom">
-                                <div class="sergey-bottom-size-picture">
+                            <div class="client_card-bottom">
+                                <div class="client_card-bottom__part client_card-bottom__size">
                                     <img src="./images/maria-size.svg" alt="size">
-                                </div>
-                                <p class="sergey-bottom-size-text">
-                                    90 м2
-                                </p>
-                                <div class="line">
 
+                                    <p class="client_card-bottom-size-text">
+                                        90 м2
+                                    </p>
                                 </div>
-                                <div class="sergey-bottom-celender-picture">
+                                <div class="client_card-bottom__part client_card-bottom__days">
                                     <img src="./images/maria-celender.svg" alt="celender">
+
+                                    <p class="client_card-bottom-celender-text">
+                                        128 days
+                                    </p>
                                 </div>
-                                <p class="sergey-bottom-celender-text">
-                                    128 days
-                                </p>
                             </div>
                         </div>
-                        <div class="client-card-egor">
-                            <div class="egor-top">
-                                <div class="egor-top-photo">
+                        <div class="client_card">
+                            <div class="client_card-top">
+                                <div class="client_card-top-photo">
                                     <img src="./images/egor-photo.jpg" alt="egor">
                                 </div>
-                                <h10 class="egor-top-name">
+                                <h3 class="client_card-top-name">
                                     Kiriev Egor Leonidovich
-                                </h10>
+                                </h3>
                             </div>
-                            <p class="egor-text">
+                            <p class="client_card-top-text">
                                 I want to thank the guys for their work. We put your shower part in repair. I am very
                                 grateful that I referred to the repair as to my own.
                                 Great thanks I express the project to Georgia for its professionalism and approach.
@@ -651,27 +616,23 @@
                                 Team mobile and professional. Works performed qualitatively without comments.
                                 Quality satisfied. Prices democratic. I recommend these masters.
                             </p>
-                            <div class="egor-bottom">
-                                <div class="egor-bottom-size-picture">
+                            <div class="client_card-bottom">
+                                <div class="client_card-bottom__part client_card-bottom__size">
                                     <img src="./images/maria-size.svg" alt="size">
-                                </div>
-                                <p class="egor-bottom-size-text">
-                                    56 м2
-                                </p>
-                                <div class="line">
 
+                                    <p class="client_card-bottom-size-text">
+                                        56 м2
+                                    </p>
                                 </div>
-                                <div class="egor-bottom-celender-picture">
+                                <div class="client_card-bottom__part client_card-bottom__days">
                                     <img src="./images/maria-celender.svg" alt="celender">
+
+                                    <p class="client_card-bottom-celender-text">
+                                        86 days
+                                    </p>
                                 </div>
-                                <p class="egor-bottom-celender-text">
-                                    86 days
-                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="client-bottom">
-                        <img src="./images/city.svg" alt="city">
                     </div>
                 </div>
             </div>
@@ -680,39 +641,60 @@
 
         <section class="contacts">
             <div class="container">
-                <div class="question-card-background">
-                    <div class="question-card">
-                        <h11 class="question-title">
+                <div class="contacts__inner">
+                    <div class="contacts-background">
+                        <h2 class="contacts-title">
                             have any questions?
-                        </h11>
-                        <form class="input-person">
-                            <p>Name</p> <br>
-                            <input class="input-person-name" type="text" name="Name" value="What is your name:">
-                            <p>Phone</p> <br>
-                            <input class="input-person-phone" type="text" name="Phone" value="Your phone number:">
-                        </form>
-                        <form class="input-question">
-                            <p>Question</p> <br>
-                            <input class="input-question-text" type="text" name="Question" value="I want to know:">
-                        </form>
-                        <form class="checkbox">
-                            <input class="input-person-checkbox" type="checkbox">
-                            I agree to the processing of personal data
-                        </form>
-                        <div class="input-question-button">
-                            <button class="button" type="submit">
+                        </h2>
+                        <form class="contacts__fields">
+                            <div class="contacts__fields-person">
+                                <label class="contacts__input_field">
+                                    <span>Name</span>
+                                    <input type="text" placeholder="What is your name:">
+                                </label>
+
+                                <label class="contacts__input_field">
+                                    <span>Phone</span>
+                                    <input type="text" placeholder="Your phone number:">
+                                </label>
+                            </div>
+                            <label class="contacts__input_field">
+                                <span>Qustion</span>
+                                <input type="text" placeholder="I want to know:">
+                            </label>
+
+                            <label class="checkbox-contacts">
+                                <input type="checkbox" required>
+                                <span>
+                                    <!--<svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264" stroke="white"
+                                            stroke-width="1.5" />
+                                    </svg>-->
+                                </span>
+                                <span>I agree to the processing of personal data</span>
+                            </label>
+
+                            <button class="button contacts__input_button" type="submit">
                                 Submit
-                            </button> <br>
-                        </div>
+                            </button>
+                        </form>
                     </div>
                     <div class="contact-info">
-                        <h12 class="contact-info-text">
+                        <div class="map map-mobile">
+                            <img src="./images/map.jpg" alt="map">
+                        </div>
+                        <h2 class="contact-info-text">
                             Rostov-on-Don, Nansen St., 239 Shopping Center
                             Decorum Tel +7 (928) 768 32 29
-                        </h12>
+                        </h2>
                         <div class="contact-info-picture">
-                            <img src="./images/email.png" alt="email">
-                            <img src="./images/instagram.png" alt="instagram">
+                            <a href="#" class="contact-info-picture__link">
+                                <img src="./images/email.png" alt="email">
+                            </a>
+                            <a href="#" class="contact-info-picture__link">
+                                <img src="./images/instagram.png" alt="instagram">
+                            </a>
                         </div>
                     </div>
                     <div class="map">
@@ -720,12 +702,15 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
     </main>
-    <!--Нижняя часть с моими контактами-->
-    <footer class="footer">
-        <!--<div class="container header-content">
+
+    <!--Нижняя часть-->
+
+    <footer class="header header--bottom">
+        <div class="container header-content">
             <div class="logo">
                 IC "Repair Design Project"
             </div>
@@ -742,8 +727,8 @@
             <div class="header-mobile">
                 +7(928) 768-32-39
             </div>
-            <button class="button">Request a call</button>
-        </div>-->
+            <button class="button header-button">Request a call</button>
+        </div>
     </footer>
 </body>
 
