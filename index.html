@@ -10,6 +10,23 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
+
+    <!-- Добавляем стили из CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
+    <!-- Добавляем тему по умолчанию из CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <title>Верстка</title>
 </head>
 
@@ -35,9 +52,9 @@
                 <span></span>
                 <span></span>
             </a>
-            <div class="header-mobile">
+            <a href="tel:+79287683239" class="header-mobile">
                 +7(928) 768-32-39
-            </div>
+            </a>
             <button class="button header-button">Request a call</button>
         </div>
     </header>
@@ -94,7 +111,7 @@
                             </p>
                             <div class="projects-mobile__slider">
                                 <img src="./images/projects-mobile__slider.jpg" alt="projects-mobile__slider">
-                                
+
 
                                 <div class="projects-mobile__sign">
                                     <button class="projects-mobile__sign__button">
@@ -494,23 +511,53 @@
                 </div>
             </div>
             <div class="style__right">
+                <div class="style__right__slider">
+                    <img class="style__right__card" src="./images/style_top_left.jpg" alt="top-left">
+
+                    <img class="style__right__card" id="image__right__card_2" src="./images/style_bottom_left.png"
+                        alt="bottom-left">
+
+                    <img class="style__right__card" id="image__right__card_3" src="./images/style_top_right.jpg"
+                        alt="top-right">
+
+                    <img class="style__right__card" id="image__right__card_4" src="./images/style_bottom_right.jpg"
+                        alt="bottom-right">
+                </div>
+
                 <div class="style-mobile__sign">
-                    <button class="style-mobile__sign__button">
+                    <button class="style-mobile__sign__button style-mobile__sign__button__prev">
                         <img src="./images/left.svg" alt="left-sign">
                     </button>
-                    <button class="style-mobile__sign__button">
+                    <button class="style-mobile__sign__button style-mobile__sign__button__next">
                         <img src="./images/right.svg" alt="right-sign">
                     </button>
                 </div>
-                <img class="style__right__card" src="./images/style_top_left.jpg" alt="top-left">
-
-                <img class="style__right__card" src="./images/style_bottom_left.png" alt="bottom-left">
-
-                <img class="style__right__card" src="./images/style_top_right.jpg" alt="top-right">
-
-                <img class="style__right__card" src="./images/style_bottom_right.jpg" alt="bottom-right">
             </div>
         </section>
+
+        <script>
+            if (window.innerWidth < 600) {
+                $(".style__right__slider").slick({
+                    infinite: false,
+                    respondTo: "slider",
+                    nextArrow: $(".style-mobile__sign__button__next"),
+                    prevArrow: $(".style-mobile__sign__button__prev"),
+                });
+            }
+
+            let sliderInit = false;
+            window.addEventListener("resize", () => {
+                if (window.innerWidth < 600 && !sliderInit) {
+                    $(".style__right__slider").slick({
+                        infinite: false,
+                        respondTo: "slider",
+                        nextArrow: $(".style-mobile__sign__button__next"),
+                        prevArrow: $(".style-mobile__sign__button__prev"),
+                    });
+                    sliderInit = true;
+                }
+            })
+        </script>
 
 
         <section class="client">
@@ -724,9 +771,9 @@
                     <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
                 </ul>
             </nav>
-            <div class="header-mobile">
+            <a href="tel:+79287683239" class="header-mobile">
                 +7(928) 768-32-39
-            </div>
+            </a>
             <button class="button header-button">Request a call</button>
         </div>
     </footer>

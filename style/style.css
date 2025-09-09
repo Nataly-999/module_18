@@ -1020,11 +1020,25 @@ LCD admiral*/
     max-width: 50%;
 }
 
+.style__right__slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
 .style__right__card {
     width: 354px;
+    height: 100%;
     max-width: 50%;
     flex: 1;
     object-fit: cover;
+}
+
+.slick-track, .slick-list {
+    height: 100%;
 }
 
 .style__right__card:first-child {
@@ -1827,7 +1841,7 @@ LCD admiral*/
 
     .style__right__card {
         margin: 0 !important;
-        position: absolute;
+        /* position: absolute; */
         top: 0;
         left: 0;
         width: 100%;
@@ -1835,18 +1849,27 @@ LCD admiral*/
         object-fit: cover;
         max-width: 100%;
         z-index: 1;
+        padding: 0 18px;
     }
 
-
+    #image__right__card_2, 
+    #image__right__card_3, 
+    #image__right__card_4{
+        /* display: none; */
+    }
     .style__right__card:first-child {
-     /*   position: relative; 03.09*/
-       /* z-index: 2;*/
-        z-index: 3; /*03.09*/
+        position: relative;
+       z-index: 2;
+        /* z-index: 3;  */
+        /*03.09*/
     }
 
     .style__right__card:nth-last-of-type(1) 
     {
-        z-index: 2; /* Четвертая картинка опускается ниже первой */
+        /* position: relative;
+        z-index: 2; */
+        /* z-index: 2;  */
+        /* Четвертая картинка опускается ниже первой */
     }
 
     .style-mobile__sign {
@@ -1859,7 +1882,7 @@ LCD admiral*/
         left: 0;
         right: 0;
         margin: auto;
-        padding: 0 15px;
+        padding: 0 33px;
         /*z-index: 3;*/
         z-index: 4;
 
